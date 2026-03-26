@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajay Gundu — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">AG<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up" style="--d:0s">
+        <span class="badge-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name reveal-up" style="--d:.1s">
+        Ajay<br /><em>Gundu</em>
+      </h1>
+      <p class="hero-role reveal-up" style="--d:.2s">
+        <span class="mono">&lt;</span>
+        Full-Stack Developer &amp; AI Enthusiast
+        <span class="mono">/&gt;</span>
+      </p>
+      <p class="hero-tagline reveal-up" style="--d:.3s">
+        Building intelligent tools that protect privacy and power experiences.
+      </p>
+      <div class="hero-ctas reveal-up" style="--d:.4s">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Say Hello</a>
+      </div>
+      <div class="hero-scroll reveal-up" style="--d:.55s">
+        <span>scroll</span>
+        <div class="scroll-line"><div class="scroll-dot"></div></div>
+      </div>
+    </div>
+    <div class="hero-stat-strip reveal-up" style="--d:.5s">
+      <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Learning</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects Built</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">2</span><span class="stat-label">Certifications</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">Top 5</span><span class="stat-label">Cognitia'25</span></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label fade-in">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <h2 class="section-title">Crafting code<br /><em>that matters</em></h2>
+          <p>
+            I'm a Computer Science undergraduate at Lovely Professional University with a passion for building tools that solve real-world problems. My interests span AI-powered applications, privacy technology, and full-stack web development.
+          </p>
+          <p>
+            From redacting sensitive data with computer vision to crafting game-night recommenders using generative AI — I enjoy working at the intersection of creativity and engineering.
+          </p>
+          <div class="about-tags">
+            <span>Python</span><span>AI/ML</span><span>React</span>
+            <span>OpenCV</span><span>Flask</span><span>Node.js</span>
+          </div>
+        </div>
+        <div class="about-card fade-in">
+          <div class="card-inner">
+            <div class="about-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-initials">AG</div>
+            </div>
+            <div class="about-meta">
+              <div class="meta-item">
+                <span class="mono meta-key">uni</span>
+                <span class="meta-val">Lovely Professional University</span>
+              </div>
+              <div class="meta-item">
+                <span class="mono meta-key">cgpa</span>
+                <span class="meta-val">7.3 / 10</span>
+              </div>
+              <div class="meta-item">
+                <span class="mono meta-key">loc</span>
+                <span class="meta-val">Phagwara, India</span>
+              </div>
+              <div class="meta-item">
+                <span class="mono meta-key">status</span>
+                <span class="meta-val status-open">Open to Work ✦</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label fade-in">02 — Skills</div>
+      <h2 class="section-title fade-in">The tech <em>I wield</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <span class="skill-icon">⌨</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill" data-level="80"><span>Python</span><div class="pill-bar"><div class="pill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-pill" data-level="75"><span>C++</span><div class="pill-bar"><div class="pill-fill" style="--w:75%"></div></div></div>
+            <div class="skill-pill" data-level="70"><span>JavaScript</span><div class="pill-bar"><div class="pill-fill" style="--w:70%"></div></div></div>
+            <div class="skill-pill" data-level="65"><span>Java</span><div class="pill-bar"><div class="pill-fill" style="--w:65%"></div></div></div>
+            <div class="skill-pill" data-level="72"><span>HTML &amp; CSS</span><div class="pill-bar"><div class="pill-fill" style="--w:72%"></div></div></div>
+            <div class="skill-pill" data-level="60"><span>C</span><div class="pill-bar"><div class="pill-fill" style="--w:60%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <span class="skill-icon">⚙</span>
+            <h3>Frameworks</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill" data-level="70"><span>React</span><div class="pill-bar"><div class="pill-fill" style="--w:70%"></div></div></div>
+            <div class="skill-pill" data-level="65"><span>Node.js</span><div class="pill-bar"><div class="pill-fill" style="--w:65%"></div></div></div>
+            <div class="skill-pill" data-level="68"><span>Flask</span><div class="pill-bar"><div class="pill-fill" style="--w:68%"></div></div></div>
+            <div class="skill-pill" data-level="60"><span>Bootstrap</span><div class="pill-bar"><div class="pill-fill" style="--w:60%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <span class="skill-icon">🗄</span>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill" data-level="65"><span>MySQL</span><div class="pill-bar"><div class="pill-fill" style="--w:65%"></div></div></div>
+            <div class="skill-pill" data-level="60"><span>MongoDB</span><div class="pill-bar"><div class="pill-fill" style="--w:60%"></div></div></div>
+            <div class="skill-pill" data-level="75"><span>OpenCV</span><div class="pill-bar"><div class="pill-fill" style="--w:75%"></div></div></div>
+            <div class="skill-pill" data-level="70"><span>Tesseract OCR</span><div class="pill-bar"><div class="pill-fill" style="--w:70%"></div></div></div>
+            <div class="skill-pill" data-level="65"><span>Gemini API</span><div class="pill-bar"><div class="pill-fill" style="--w:65%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <span class="skill-icon">🤝</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="soft-badges">
+            <span class="soft-badge">Problem-Solving</span>
+            <span class="soft-badge">Team Player</span>
+            <span class="soft-badge">Leadership</span>
+            <span class="soft-badge">Adaptability</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label fade-in">03 — Projects</div>
+      <h2 class="section-title fade-in">Things I've <em>built</em></h2>
+      <div class="projects-grid">
+
+        <!-- AnonyMate -->
+        <article class="project-card fade-in">
+          <div class="project-number">01</div>
+          <div class="project-top">
+            <div class="project-icon">🔒</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AnonyMate</h3>
+          <p class="project-sub">PII Redaction Tool</p>
+          <p class="project-desc">
+            Detects and redacts Personally Identifiable Information from images and PDFs using multi-language OCR and computer vision. Blurs or blacks out sensitive regions automatically.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>OpenCV</span><span>Tesseract OCR</span><span>Tkinter</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-date">Jun – Jul 2025</span>
+            <span class="project-badge">Privacy Tech</span>
+          </div>
+        </article>
+
+        <!-- Nexus Games -->
+        <article class="project-card fade-in">
+          <div class="project-number">02</div>
+          <div class="project-top">
+            <div class="project-icon">🎮</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Nexus Games</h3>
+          <p class="project-sub">AI Game Night Recommender</p>
+          <p class="project-desc">
+            Flask API that recommends fun family games using Google's Gemini AI based on number of players and desired duration. Features prompt engineering and structured JSON parsing.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>Flask</span><span>Gemini API</span><span>REST</span><span>JSON</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-date">Apr – May 2024</span>
+            <span class="project-badge">AI / GenAI</span>
+          </div>
+        </article>
+
+        <!-- Hiredly -->
+        <article class="project-card fade-in">
+            <div class="project-number">02</div>
+            <div class="project-top">
+                <div class="project-icon">💼</div>
+                <div class="project-links">
+                    <a href="#" class="proj-link" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        
+            <h3 class="project-title">Hiredly</h3>
+            <p class="project-sub">Job Application Tracking Platform</p>
+        
+            <p class="project-desc">
+                A full-stack web application that helps users track and manage job applications efficiently. It provides a
+                centralized dashboard to monitor application status, organize submissions, and streamline the job search
+                process.
+            </p>
+        
+            <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>REST API</span>
+            </div>
+        
+            <div class="project-footer">
+                <span class="project-date"> Feb 2025</span>
+                <span class="project-badge">Full Stack</span>
+            </div>
+        </article>
+
+        <!-- Fake Image Detector -->
+        <article class="project-card fade-in">
+          <div class="project-number">03</div>
+          <div class="project-top">
+            <div class="project-icon">🔍</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Fake Image Detector</h3>
+          <p class="project-sub">AI Authenticity Verifier</p>
+          <p class="project-desc">
+            Selected in Cognitia'25 Top 5 Tech Projects. Uses AI to verify image authenticity and detect manipulated content — helping combat misinformation at scale.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>AI/ML</span><span>Computer Vision</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-date">2025</span>
+            <span class="project-badge award">🏆 Top 5</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-label fade-in">04 — Education</div>
+      <h2 class="section-title fade-in">My <em>journey</em></h2>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="tl-year">2023 – Present</span>
+            <h3>B.Tech — Computer Science &amp; Engineering</h3>
+            <p class="tl-place">Lovely Professional University · Phagwara, India</p>
+            <div class="tl-detail">CGPA: <strong>7.3 / 10</strong></div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="tl-year">2021 – 2023</span>
+            <h3>Intermediate (Class XII)</h3>
+            <p class="tl-place">Resonance · Hyderabad, Telangana</p>
+            <div class="tl-detail">Percentage: <strong>89%</strong></div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="tl-year">2019 - 2020</span>
+            <h3>Schooling 10th</h3>
+            <p class="tl-place">Unicent Hyderabad</p>
+            <div class="tl-detail">Percentage: <strong>69%</strong></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="certs section" id="certs">
+    <div class="container">
+      <div class="section-label fade-in">05 — Certifications</div>
+      <h2 class="section-title fade-in">What I've <em>earned</em></h2>
+      <div class="certs-grid">
+        <div class="cert-card fade-in">
+          <div class="cert-logo">📡</div>
+          <div class="cert-body">
+            <h3>The Bits and Bytes of Computer Networking</h3>
+            <p class="cert-issuer">Coursera — Google</p>
+            <span class="cert-date">September 2025</span>
+          </div>
+          <div class="cert-badge">Verified</div>
+        </div>
+        <div class="cert-card fade-in">
+          <div class="cert-logo">⚡</div>
+          <div class="cert-body">
+            <h3>C++ OOPS and DSA</h3>
+            <p class="cert-issuer">CSE Pathshala</p>
+            <span class="cert-date">August 2025</span>
+          </div>
+          <div class="cert-badge">Certified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-label fade-in">06 — Achievements</div>
+      <h2 class="section-title fade-in">Highlights &amp; <em>wins</em></h2>
+      <div class="ach-grid">
+        <div class="ach-card fade-in">
+          <div class="ach-icon">🏆</div>
+          <h3>Cognitia'25 — Top 5 Tech Projects</h3>
+          <p>Recognized for building a Fake Image Detector using AI to verify image authenticity and detect manipulated content. Competed against hundreds of entries.</p>
+        </div>
+        <div class="ach-card fade-in">
+          <div class="ach-icon">🎤</div>
+          <h3>Showcased at ML Expo</h3>
+          <p>Presented AnonyMate — a multi-language PII redaction tool — at a Machine Learning Expo. Demonstrated real-time anonymization of sensitive data in images and PDFs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label fade-in">07 — Contact</div>
+      <h2 class="section-title fade-in">Let's <em>connect</em></h2>
+      <div class="contact-grid">
+        <div class="contact-left fade-in">
+          <p class="contact-intro">Have a project, opportunity, or just want to chat? My inbox is always open.</p>
+          <div class="contact-links">
+            <a href="mailto:ajaygundu03@gmail.com" class="contact-link">
+              <span class="cl-icon">✉</span>
+              <div>
+                <span class="cl-label">Email</span>
+                <span class="cl-val">ajaygundu03@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ajaygundu2005/" target="_blank" class="contact-link">
+              <span class="cl-icon">in</span>
+              <div>
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-val">ajaygundu2005</span>
+              </div>
+            </a>
+            <a href="https://github.com/ajay0550" target="_blank" class="contact-link">
+              <span class="cl-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </span>
+              <div>
+                <span class="cl-label">GitHub</span>
+                <span class="cl-val">ajay0550</span>
+              </div>
+            </a>
+            <a href="tel:+919652571976" class="contact-link">
+              <span class="cl-icon">☎</span>
+              <div>
+                <span class="cl-label">Phone</span>
+                <span class="cl-val">+91 96525 71976</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="What's on your mind?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form-success" id="form-success">✓ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">AG<span class="dot">.</span></span>
+        <span class="footer-copy">© 2025 Ajay Gundu. Built with ♥ and lots of coffee.</span>
+        <a href="#hero" class="back-top">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
